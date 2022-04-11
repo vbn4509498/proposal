@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4ff060e83.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <header class="header">       
+          <div class="homediv"> 
+              <a href="index.html" class="home"><span class="homespan">EQUALLY DIVIDER</span></a>
+              <a href="" class="login"><span class="homespan"><i class="fa fa-user" aria-hidden="true">&ensp;</i>UserName</span> </a>
+              <a href="login.html" class="logout"><span class="homespan" onclick="logout()">Logout</span></a>
+          </div> 
+          <span  style="font-size:25px;cursor:pointer; color: white;" onclick="Nav()">&#9776; </span>
+          <nav class="navbar" id="navbar">
+              <ul class="navul">
+                <li ><span class="closebtn" style="font-size:50px; cursor: pointer;"onclick="Nav()" >&times;</span></li>
+                <li class="navli"><a href="index.html"class="item" ><span class="item-account">我的帳本</span><span class="item-arrow">&ensp;&ensp;&ensp;&ensp;&#8744;</span></a></li>
+                <li class="navli"> <a href="新增帳本.html"class="item"><span class="new-account">新增帳本</span><span class="item-arrow">&ensp;&ensp;&ensp;&ensp;&#8744;</span></a></li>
+                <li class="navli">
+                  <span style="cursor: pointer;" class="yearspan" onclick="opentrip()">2021&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#8744;</span>
+                    <div id="tripdiv" class="tripdiv">
+                          <ul class="tripul">
+                            <li class="tripli">
+                              <a href="./Finland.html" target="_blank" class="trip">芬蘭之旅</a>
+                            </li>
+                            <li class="tripli">
+                              <a href=""class="trip">日本之旅</a>
+                            </li>
+                            <li class="tripli">
+                              <a href=""class="trip">韓國之旅</a>
+                            </li>
+                            <li class="tripli">
+                              <a href=""class="trip">英國之旅</a>
+                            </li>
+                          </ul>
+                    </div>
+                </li>
+              </ul>
+              </div>
+          </nav>
+    </header>
+    <div class="month">
+        <a href=""><span class="monthspan">1</span></a></li>
+        <a href=""><span class="monthspan">2</span></a></li>
+        <a href=""><span class="monthspan">3</span></a></li>
+        <a href=""><span class="monthspan">4</span></a></li>
+        <a href=""><span class="monthspan">5</span></a></li>
+        <a href=""><span class="monthspan">6</span></a></li>
+        <a href=""><span class="monthspan">7</span></a></li>
+        <a href=""><span class="monthspan">8</span></a></li>
+        <a href=""><span class="monthspan">9</span></a></li>
+        <a href=""><span class="monthspan">10</span></a></li>
+        <a href=""><span class="monthspan">11</span></a></li>
+        <a href=""><span class="monthspan">12</span></a></li>
+      </ul>
+    </div>
+    <div class="page">
+      <div class="page-heading">
+            <section class="account">
+                <section class="title">                
+                    <h2 >收入</h2>
+                    <h2 ><strong>-</strong></h2>
+                    <h2 >支出</h2>
+                    <h2><strong>=</strong></h2>
+                    <h2 >餘額</h2>
+                </section>  
+                  <br>
+                <div class="subtitle">
+                    <h2 ><strong>300</strong></h2>
+                    <h2 class="expense"><strong>960</strong></h2>
+                    <h2 ><strong>-660</strong></h2>
+                </div>
+            </section>
+      </div>
+      <section class="tables">
+              <div class="default-table">
+                <table cellspacing="50" id="table">
+                  <thead>
+                    <tr>
+                      <th>&ensp;&ensp;年&ensp;/&ensp;月&ensp;/&ensp;日</th>
+                      <th>&ensp;&ensp;R/E</th>
+                      <th>&ensp;&ensp;Class</th>
+                      <th>&ensp;&ensp;Note</th>
+                      <th>&ensp;&ensp;Amount</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input class="tableinput" type="date" id="date"></td>
+                      <td><input class="tableinput" type="text" placeholder="收入/支出" id="R/E"></td>
+                      <td><input class="tableinput" type="text" placeholder="類別" id="class"></td>
+                      <td><input class="tableinput" type="text" placeholder="備註" id="Note"></td>
+                      <td><input class="tableinput" type="text" placeholder="金額" id="Amount"></td>
+                      <td><button class="confirm" onclick="total()">確認</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                  <p align ="right" id='total'><strong ></strong></p>
+              </div>
+            <script src="index.js"></script>
+    </section>
+  </div>
+</body>
+</html>
