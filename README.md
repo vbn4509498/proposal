@@ -1,0 +1,2 @@
+引流整合裝置，py檔為MQTT串接MSSQL
+PHP檔為網頁串接MSSQL，並把資料呈現至網頁
